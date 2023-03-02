@@ -19,8 +19,8 @@ func LogWarn(message string) {
 }
 
 func LogError(message string) {
-	colorGreen := "\033[32m"
+	colorRed := "\033[31m"
 	colorReset := "\033[0m"
 	info := fmt.Sprintf("ERROR -  %v", message)
-	fmt.Println(string(colorGreen), info, string(colorReset))
+	fmt.Println(string(colorRed), info, string(colorReset))
 }
