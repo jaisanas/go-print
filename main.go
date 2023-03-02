@@ -1,12 +1,26 @@
-package mylogger
+package logger
 
 import (
 	"fmt"
-	"log"
 )
 
 func LogInfo(message string) {
     colorGreen := "\033[32m"
-	fmt.Print(string(colorGreen))
-	log.Printf("INFO - %v", message)
+	colorReset := "\033[0m"
+	info := fmt.Sprintf("INFO -  %v", message)
+	fmt.Println(string(colorGreen), info, string(colorReset))
+}
+
+func LogWarn(message string) {
+    colorGreen := "\033[32m"
+	colorReset := "\033[0m"
+	info := fmt.Sprintf("WARN -  %v", message)
+	fmt.Println(string(colorGreen), info, string(colorReset))
+}
+
+func LogError(message string) {
+	colorGreen := "\033[32m"
+	colorReset := "\033[0m"
+	info := fmt.Sprintf("ERROR -  %v", message)
+	fmt.Println(string(colorGreen), info, string(colorReset))
 }
