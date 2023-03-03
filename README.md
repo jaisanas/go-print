@@ -3,9 +3,11 @@
 ## Getting Started
 
 1. get the library
+
    ```bash
    go get -u github.com/jaisanas/go-print
    ```
+
 2. Usage Example
 
    ```bash
@@ -19,3 +21,6 @@
        logger.LogError("test 3")
    }
    ```
+
+3. Example output to the terminal
+   ![Screenshot](images/screenshot1.png)
