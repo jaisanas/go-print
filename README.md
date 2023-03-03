@@ -23,4 +23,4 @@
    ```
 
 3. Example output to the terminal
-   ![Screenshot](images/screenshot1.png)
+   ![Screenshot](images/screenshot.png)
